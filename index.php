@@ -4,20 +4,18 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-        <title>Screenshot by Lightshot</title>
+        <title>Pokémon Winds and Waves Snapshot</title>
 
-        <meta property="og:title" content="Screenshot">
+        <meta property="og:title" content="Pokémon Winds and Waves Lightshot">
         <meta property="og:url" content="https://<?= $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>">
-        <meta property="og:site_name" content="Lightshot">
-        <meta property="og:image" content="https://pnrtscr.com/lightshot.png">
-        <meta property="og:description" content="Captured with Lightshot">
+        <meta property="og:image" content="https://gaiawindwave90.github.io/pokemonwindsandwaves/pokeball.png">
+        <meta property="og:description" content="Capture the screencaps with the special Pokémon Winds and Waves Lightshot tool!">
         <meta property="og:type" content="website">
 
         <meta name="twitter:card" content="photo">
-        <meta name="twitter:title" content="Screenshot">
-        <meta name="twitter:site" content="@light_shot">
-        <meta name="twitter:description" content="Captured with Lightshot">
-        <meta name="twitter:image:src" content="https://pnrtscr.com/lightshot.png">
+        <meta name="twitter:title" content="Pokémon Winds and Waves Snapshot">
+        <meta name="twitter:description" content="Capture the screencaps with the special Pokémon Winds and Waves Snapshot tool!">
+        <meta name="twitter:image:src" content="https://gaiawindwave90.github.io/pokemonwindsandwaves/pokeball.png">
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
