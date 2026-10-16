@@ -54,7 +54,7 @@ font-size: 50px;
 letter-spacing: -0.02em;
 }
 body {
-background-color: #0a1e32;
+background-color: #000000;
 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 p {
@@ -150,8 +150,14 @@ width: 100%;
 }
 
 </style>
+<script>
+function hideVideo() {
+  const video = document.getElementById("video");
+			video.hidden = true;
+}
+</script>
     </head>
-    <body>
+    <body onload="hideVideo()">
         <div id="overlay" class="overlay">
             <div class="overlay-body">
                 <p class="overlay-title">Cookies</p>
@@ -174,7 +180,7 @@ The trailer in this website may not be suitable for visitors who are <b>very sen
         </div>
 
         <div class="scare">
-            <video id="video" class="video" src="https://github.com/gaiawindwave90/pokemonwindsandwaves/video.mp4" loop></video>
+            <video id="video" class="video" src="video.mp4" loop></video>
         </div>
 
         <script type="text/javascript">
@@ -193,6 +199,7 @@ The trailer in this website may not be suitable for visitors who are <b>very sen
                 event.preventDefault();
                 if(!hasClicked) hasClicked = true;
                 overlay.hidden = true;
+				video.hidden = false;
                 video.play();
                 videoClick();
             }
