@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Pokémon Winds and Pokémon Waves | Second Trailer</title>
+<meta name="description"
+content="Watch the second trailer for Pokémon Winds and Pokémon Waves, and learn about more new Pokémon.">
+<meta property="og:title"
+content="Pokémon Winds and Pokémon Waves | Announcement Trailer">
+<meta property="og:description"
+content="Watch the second trailer for Pokémon Winds and Pokémon Waves, and learn about more new Pokémon.">
+<meta property="og:url"
+content="https://windswaves.pokemon.com/en-us/">
+<meta property="og:image:alt" content="Description of the alt image.">
+<meta name="tw:description"
+content="Watch the second trailer for Pokémon Winds and Pokémon Waves, and learn about more new Pokémon. https://windswaves.pokemon.com/en-us/">
+<meta
+content="https://windswaves.pokemon.com/images/meta/en/share-fb.jpg"
+property="og:image">
+<meta
+content="https://windswaves.pokemon.com/images/meta/en/share-tw.jpg"
+name="twitter:image">
+<link rel="icon" href="https://windswaves.pokemon.com/favicon.ico"
+sizes="any">
+<link rel="apple-touch-icon"
+href="https://windswaves.pokemon.com/favicons/apple-touch-icon.png">
+<link rel="icon"
+href="https://windswaves.pokemon.com/favicons/favicon.svg"
+type="image/svg+xml">
+<link href="https://windswaves.pokemon.com/manifest.json"
+rel="manifest">
+<meta name="theme-color" content="#fff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="preload"
+href="https://windswaves.pokemon.com/_next/static/chunks/ac62bb05338eda03.css"
+as="style">
+<link rel="preload"
+href="https://windswaves.pokemon.com/_next/static/chunks/3d19ff128aa1daea.css"
+as="style">
+<link rel="preload"
+href="https://windswaves.pokemon.com/_next/static/chunks/46543123bffc3b12.css"
+as="style">
+<noscript data-n-css=""></noscript>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+
+        <style type="text/css">
+.logomark {
+font-weight: 800;
+font-size: 50px;
+letter-spacing: -0.02em;
+}
+body {
+background-color: #0a1e32;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+p {
+margin: 0;
+}
+*, *:before, *:after {
+}
+.overlay, .scare {
+position: fixed;
+top: 0;
+left: 0;
+}
+p.overlay-title {
+font-size: 24px;
+font-weight: 900;
+color: black;
+line-height: 1;
+margin-bottom: 16px;
+}
+.overlay-button {
+margin: 4px;
+height: 40px;
+padding-right: 24px;
+padding-left: 24px;
+font-size: 16px;
+font-weight: 500;
+line-height: 1;
+cursor: pointer;
+}
+.overlay-buttons-wrapper {
+margin: 24px -8px -8px;
+}
+#accept-button {
+background-color: #09A0AB;
+color: white;
+}
+#decline-button {
+border: 2px solid #09A0AB;
+color: #09A0AB;
+}
+p.overlay-description {
+font-size: 16px;
+font-weight: 400;
+line-height: 1.25;
+margin-bottom: 16px;
+}
+a.overlay-link {
+text-decoration: none;
+font-size: 16px;
+font-weight: 500;
+color: #1d969f;
+line-height: 1;
+position: relative;
+margin-top: 16px;
+}
+a.overlay-link:before {
+position: absolute;
+
+                content: "";
+
+                height: calc(50% + 4px);
+                width: calc(100% + 8px);
+
+                bottom: -4px;
+                left: -4px;
+}
+.overlay-body {
+max-width: 512px;
+text-align: center;
+font-family: "Inter",sans-serif;
+}
+.overlay[hidden] {
+display: none;
+}
+.overlay {
+z-index: 2;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #ced2d6;
+padding-right: 35px;
+padding-left: 35px;
+margin-top: 10%;
+margin-right: 25%;
+margin-left: 25%;
+}
+.scare {
+z-index: 1;
+}
+video#video {
+height: 100%;
+width: 100%;
+}
+
+</style>
+    </head>
+    <body>
+        <div id="overlay" class="overlay">
+            <div class="overlay-body">
+                <p class="overlay-title">Cookies</p>
+
+                <p class="overlay-description">This website uses
+cookies to offer you the most relevant information
+and better understand how you use this website. Please accept cookies
+for optimal performance.<br>
+<br>
+The trailer in this website may not be suitable for visitors who are <b>very sensitive to flashing.</b>
+<br></p>
+
+                <div class="overlay-buttons-wrapper">
+                    <div id="accept-button" class="overlay-button">Accept</div>
+                    <div id="decline-button" class="overlay-button">Decline</div>
+                </div>
+
+                <a href="https://www.pokemon.com/us/privacy-notice/" target="_blank" class="overlay-link">Privacy Notice</a>
+            </div>
+        </div>
+
+        <div class="scare">
+            <video id="video" class="video" src="/video.mp4" loop></video>
+        </div>
+
+        <script type="text/javascript">
+            const video = document.getElementById("video");
+            const overlay = document.getElementById("overlay");
+            const declineButton = document.getElementById("decline-button");
+            const acceptButton = document.getElementById("accept-button");
+
+            let hasClicked;
+
+            window.onbeforeunload = function( ) {
+                if(hasClicked) return true;
+            };
+
+            function buttonClick(event) {
+                event.preventDefault();
+                if(!hasClicked) hasClicked = true;
+                overlay.hidden = true;
+                video.play();
+                videoClick();
+            }
+
+            function videoClick(event) {
+                if(event) event.preventDefault();
+                // if not fullscreen
+                const { documentElement } = document;
+                if(documentElement.requestFullscreen) documentElement.requestFullscreen();
+                else if(documentElement.mozRequestFullScreen) documentElement.mozRequestFullScreen();
+                else if(documentElement.webkitRequestFullscreen) documentElement.webkitRequestFullscreen();
+                else if(documentElement.msRequestFullscreen) documentElement.msRequestFullscreen();
+            }
+
+            acceptButton.addEventListener("click", buttonClick);
+            declineButton.addEventListener("click", buttonClick);
+            video.addEventListener("click", videoClick);
+        </script>
+    </body>
+</html>
